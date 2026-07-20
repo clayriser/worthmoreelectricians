@@ -198,6 +198,37 @@ h2 {
         var(--color-background-alt);
 }
 
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1 1 52%;
+    min-width: 0;
+}
+
+.hero-image {
+    flex: 1 1 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    max-width: 11ch;
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    border-radius: 12px;
+}
+
 .eyebrow {
     margin-bottom: 1rem;
     color: var(--color-primary);
@@ -268,7 +299,26 @@ h2 {
         min-height: auto;
         padding-block: 5rem;
     }
+    
+    .hero h1 {
+        max-width: none;
+        font-size: clamp(2.75rem, 12vw, 4rem);
+    }
 
+    .hero-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
+        margin-top: 2rem;
+    }
+    
     .hero-actions {
         align-items: flex-start;
         flex-direction: column;
