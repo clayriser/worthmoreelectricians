@@ -365,6 +365,111 @@ h2 {
 }
 
 /* ==================================================
+   Google Reviews
+================================================== */
+
+.reviews-summary {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.review-rating {
+    font-size: 2rem;
+    color: #f5b400;
+    line-height: 1;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background: #ffffff;
+    border-left: 5px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-small);
+}
+
+.review-stars {
+    color: #f5b400;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.review-card blockquote {
+    margin: 0;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.review-author {
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+.section-cta {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-small);
+}
+
+.section-cta p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.final-cta {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.final-cta-content {
+    max-width: 52rem;
+    text-align: center;
+}
+
+.final-cta .eyebrow {
+    color: #ffffff;
+}
+
+.final-cta h2 {
+    color: #ffffff;
+}
+
+.final-cta p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.final-cta .button {
+    margin-top: 1rem;
+    background: #ffffff;
+    color: var(--color-primary);
+}
+
+.final-cta .button:hover {
+    background: #f4f6f8;
+    color: var(--color-primary-dark);
+}
+
+.final-cta-note {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* ==================================================
    Responsive navigation
    ================================================== */
 
