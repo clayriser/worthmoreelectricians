@@ -244,6 +244,19 @@ h2 {
     font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
+.hero-signature {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-footnote {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
 .hero-actions {
     display: flex;
     align-items: center;
