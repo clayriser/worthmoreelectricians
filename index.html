@@ -57,7 +57,7 @@
                 <a
                     class="button button-small"
                     href="tel:7206693218"
-                    onclick="gtag('event', 'phone_click', {button_location: 'header'});"
+                    data-track="header"
                 >
                     Call Clay
                 </a>
@@ -417,5 +417,17 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[data-track][href^="tel:"]').forEach((link) => {
+            link.addEventListener('click', () => {
+                gtag('event', 'phone_click', {
+                    button_location: link.dataset.track,
+                    button_text: link.textContent.trim()
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
